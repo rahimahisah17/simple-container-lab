@@ -84,7 +84,7 @@ touch Dockerfile && echo -e 'FROM node:18-alpine\nCOPY app.js .\nCMD ["node","ap
 
 > **Figure 3:** Created the Dockerfile and verified its contents.
 
-<!-- Insert Screenshot 3 Here -->
+![Dockerfile](images/dockerfile.png)
 
 > **💡 Key Learning:** A Dockerfile is a blueprint for building a Docker image, ensuring applications can be packaged and run consistently across different environments.
 
@@ -102,12 +102,6 @@ docker build -t simple-container-lab:1.0 .
 - `-t` assigns a name and version tag to the image.
 - `.` specifies the current directory as the build context.
 
-> **Figure 4:** Successfully built the Docker image.
-
-<!-- Insert Screenshot 4 Here -->
-
-> **💡 Key Learning:** Docker builds images by following the instructions in the Dockerfile, creating a reusable package that can be deployed consistently.
-
 ## 🔍 Verify the Docker Image
 
 The newly created image was verified to ensure it was successfully stored in the local Docker image repository.
@@ -121,11 +115,14 @@ docker image ls
 - `docker image ls` lists all Docker images stored on the local machine.
 - This confirms that the image was built successfully and is ready to be used.
 
-> **Figure 5:** Verified that the `simple-container-lab:1.0` image was created successfully.
-
-<!-- Insert Screenshot 5 Here -->
-
 > **💡 Key Learning:** Building an image and verifying its existence are two separate steps. Confirming the image before running it helps ensure the build completed successfully.
+
+
+> **Figure 4:** Successfully built the Docker image and Verified that the `simple-container-lab:1.0` image was created successfully.
+
+![Build image](images/build-image.png)
+
+> **💡 Key Learning:** Docker builds images by following the instructions in the Dockerfile, creating a reusable package that can be deployed consistently.
 
 ## 🚀 Run the Application Container
 
@@ -142,7 +139,7 @@ docker run --rm simple-container-lab:1.0
 
 > **Figure 6:** Successfully ran the container and displayed the application output.
 
-<!-- Insert Screenshot 6 Here -->
+![Run container](images/run-container.png)
 
 > **💡 Key Learning:** A Docker image is a reusable template, while a container is a running instance of that image.
 
@@ -161,7 +158,7 @@ git init
 
 > **Figure 7:** Initialized the project as a Git repository.
 
-<!-- Insert Screenshot 7 Here -->
+![Git Init](images/git-init.png)
 
 > **💡 Key Learning:** Version control makes it possible to track changes, collaborate with others, and restore previous versions of a project when needed.
 
@@ -180,7 +177,7 @@ git add .
 
 > **Figure 8:** Staged the project files using Git.
 
-<!-- Insert Screenshot 8 Here -->
+![Git Add](images/git-add.png)
 
 > **💡 Key Learning:** The staging area allows you to review and control exactly which changes will be included in a commit.
 
@@ -199,7 +196,7 @@ git commit -m "feat: first container"
 
 > **Figure 9:** Created the initial Git commit.
 
-<!-- Insert Screenshot 9 Here -->
+![Git Commit](images/git-commit.png)
 
 > **💡 Key Learning:** Each commit represents a permanent snapshot of the project, making it easy to track progress and revert to previous versions when necessary.
 
@@ -221,7 +218,7 @@ git remote add origin https://github.com/${GITHUB_USERNAME}/simple-container-lab
 
 > **Figure 10:** Connected the local repository to GitHub.
 
-<!-- Insert Screenshot 10 Here -->
+![Github Remote](images/github-remote.png)
 
 > **💡 Key Learning:** A remote repository enables code sharing, collaboration, and synchronization between your local machine and GitHub.
 
@@ -240,7 +237,7 @@ git push -u origin main
 
 > **Figure 11:** Successfully published the project to GitHub.
 
-<!-- Insert Screenshot 11 Here -->
+![Github Push](images/github-push.png)
 
 > **💡 Key Learning:** Publishing a project to GitHub provides a remote backup, supports collaboration, and showcases your work to potential employers.
 

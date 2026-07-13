@@ -137,7 +137,7 @@ docker run --rm simple-container-lab:1.0
 - `docker run` creates and starts a container from the image.
 - `--rm` automatically removes the container after it stops, preventing unused containers from accumulating.
 
-> **Figure 6:** Successfully ran the container and displayed the application output.
+> **Figure 5:** Successfully ran the container and displayed the application output.
 
 ![Run container](images/run-container.png)
 
@@ -156,7 +156,7 @@ git init
 - `git init` creates a local Git repository by adding a hidden `.git` directory.
 - This enables version control for the project.
 
-> **Figure 7:** Initialized the project as a Git repository.
+> **Figure 6:** Initialized the project as a Git repository.
 
 ![Git Init](images/git-init.png)
 
@@ -175,7 +175,7 @@ git add .
 - `git add .` stages all new and modified files in the current directory.
 - Staged changes are included in the next commit.
 
-> **Figure 8:** Staged the project files using Git.
+> **Figure 7:** Staged the project files using Git.
 
 ![Git Add](images/git-add.png)
 
@@ -194,7 +194,7 @@ git commit -m "feat: first container"
 - `git commit` saves the staged changes to the Git repository.
 - `-m` provides a descriptive commit message without opening a text editor.
 
-> **Figure 9:** Created the initial Git commit.
+> **Figure 8:** Created the initial Git commit.
 
 ![Git Commit](images/git-commit.png)
 
@@ -216,7 +216,7 @@ git remote add origin https://github.com/${GITHUB_USERNAME}/simple-container-lab
 - `git remote add origin` connects the local repository to its remote GitHub repository.
 - `origin` is the conventional name for the primary remote.
 
-> **Figure 10:** Connected the local repository to GitHub.
+> **Figure 9:** Connected the local repository to GitHub.
 
 ![Github Remote](images/github-remote.png)
 
@@ -235,7 +235,7 @@ git push -u origin main
 - `git push` uploads local commits to the remote repository.
 - `-u` sets `origin/main` as the default upstream branch, allowing future pushes with `git push`.
 
-> **Figure 11:** Successfully published the project to GitHub.
+> **Figure 10:** Successfully published the project to GitHub.
 
 ![Github Push](images/github-push.png)
 

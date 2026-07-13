@@ -62,7 +62,9 @@ touch app.js && echo 'console.log("Hello, DevOps!");' > app.js
 
 > **Figure 2:** Created the Node.js application and verified its contents using `cat app.js`.
 
-<!-- Insert Screenshot 2 Here -->
+<p align="center">
+  <img src="images/build-image.png" alt="Project Setup" width="850">
+</p>
 
 > **💡 Key Learning:** The `>` operator overwrites a file with new content, making it a quick way to create configuration and source files from the terminal.
 
